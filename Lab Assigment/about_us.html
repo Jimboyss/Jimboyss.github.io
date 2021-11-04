@@ -1,0 +1,185 @@
+<DOCTYPE html>
+
+<html>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        
+        table ,th ,td{
+            background-color: #151414;
+            border: whitesmoke;
+            border-collapse: collapse;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            margin-top: 4%;
+            margin-left: 20%;
+        }
+        
+        th{
+            font-family: "Times New Roman", Times, serifrial;
+            background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .button{
+            margin-top: 20px;
+            padding-left: 40%;
+
+        }
+
+        .glow-on-hover {
+             width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:active {
+            color: #000
+        }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+    </style>
+
+    <title>Academic Page</title>
+
+    <body>
+        <table id="a">
+            <tr>
+                <th>NUMBERS</th>
+                <th>COURSE CODE</th>
+                <th>COURSE NAME</th>
+                <th>EXPECTED GRED</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <div class="subject">
+                    <td>CSC 508</td>
+                </div>
+                <td>DATA STURCTURE</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <div class="subject">
+                    <td>CSC 569</td>
+                </div>
+                <td>PRINCIPLE OF COMPILERS</td>
+                <td>B</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <div class="subject">
+                    <td>CSC 574</td>
+                </div>
+                <td>DYNAMIC WEB APPLICATION DEVELOPMENT</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <div class="subject">
+                    <td>CSC 577</td>
+                </div>
+                <td>SOFTWARE ENGINEERING</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <div class="subject">
+                    <td>CSC 584</td>
+                </div>
+                <td>ENTERPRISE PROGRAMMING</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <div class="subject">
+                    <td>CTU 554</td>
+                </div>
+                <td>VALUE AND CIVILIZATION II</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <div class="subject">
+                    <td>ELC 650</td>
+                </div>
+                <td>ENGLISH FOR PROFESSIONAL INTERACTION</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <div class="subject">
+                    <td>TAC 451</td>
+                </div>
+                <td>INTRODUCTORY ARABIC</td>
+                <td>A</td>
+            </tr>
+        </table>
+
+        <div class="button">
+			<button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/Homepage.html">Homepage</a></button>
+		</div>
+    </body>
+</html>

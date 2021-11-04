@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html> 
+	<title>My Gallery</title>
+	
+	<style>
+	
+		body{
+		background: black;
+		-webkit-background-size:cover;
+		-moz-background-size: no-repeat;
+		background-size: cover;
+		}
+		
+		h1{
+			font-size: 50px;
+            font-family: "Times New Roman", Times, serifrial;
+            background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+
+		.a{
+			border: solid;
+			border-color:white;
+			position:static;
+			margin-right: 71%;
+			margin-left: 100px;
+			margin-top: 80px;
+			margin-bottom: 30px;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		img{
+			transition: 1s;
+		}
+		img:hover {
+			transform:scale(1.3);
+		}
+		
+		.b{
+			border:solid;
+			border-color:white;
+			margin-right: 43%;
+			margin-left: 35%;
+			margin-top: -39%;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		.c{
+			border:solid;
+			border-color:white;
+			margin-right: 6%;
+			margin-left: 900px;
+			margin-top: -460px;
+			margin-bottom: 20px;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		.d{
+			border:solid;
+			border-color:white;
+			margin-right: 71%;
+			margin-left: 100px;
+			margin-bottom: 50px;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		.e{
+			border:solid;
+			border-color:white;
+			padding-top: 2px;
+			margin-right: 23%;
+			margin-left: 35%;
+			margin-top: -33%;
+			margin-bottom: 50px;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		.g{
+			margin-top: 5%;
+			position: center;
+			text-align: center;
+			background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+		}
+		
+		.video{
+		margin-top: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+		}
+
+		button{
+		  margin-left: 45%;
+		}
+
+		.glow-on-hover {
+             width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:active {
+            color: #000
+        }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+		
+		footer{
+		background-color:black;
+		color:white;
+		padding-top:-20px;
+		clear:both;
+		text-align:center;
+		padding:5px;
+		}
+	</style>
+	
+	<body>
+		<h1 style="text-align: center;"><b>MY GALLERY</b></h1>
+		<div class="a">
+			<img src="p3.jpg" width="320" height="500"></img>
+			<p>This picture is at Tasik Puteri</p>
+		</div>
+			
+		<div class="b">
+			<img src="p2.jpg" width="320" height="500"></img>
+			<p>This picture I take to celebrate Independant Day</p>
+		</div>
+			
+		<div class="c">
+			<img src="p4.jpg" width="500" height="400"></img>
+			<p>My sibling when celebrate Hari Raya</p>
+		</div>
+		
+		<div class="d">
+			<img src="p5.jpg" width="320" height="400"></img>
+			<p>My picture with my friends after play futsal</p>
+		</div>
+		
+		<div class="e">
+			<img src="p6.jpg" width="500" height="400"></img>
+			<p>My classmate in Diploma Sciene Computer and Mathematic</p>
+		</div>
+
+		<div class="button">
+			<button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/Homepage.html">Homepage</a></button>
+		</div>
+		
+		
+		
+		<div class="g">
+			<h1 style="text-align:center; ">My Practical Video</h1>
+			
+			<div class="video">
+			<video controls style= "width: 420px; height: 340px;">
+				<source src="LI.mp4" type="video/mp4">
+			</video>
+		    </div>
+		</div>	
+	</body>
+	
+	<footer>&copy 2021 Developed by Hazeem</footer>
+</html>

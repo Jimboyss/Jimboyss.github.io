@@ -1,0 +1,142 @@
+<DOCtype.html>
+
+<html>
+    <title>Home Page</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .name {
+            padding-top: 200px;
+            padding-left: 150px;
+            font-size: 30px;
+            font-family: "Times New Roman", Times, serifrial;
+            background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            
+            }
+
+        .describe{
+            padding-left: 150px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .button{
+            padding-left: 50%;
+
+        }
+
+        .glow-on-hover {
+             width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:active {
+            color: #000
+        }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        .loader {
+            margin-left: 60%;
+            margin-top: -25%;
+            margin-bottom: 5%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(115, 115, 207);
+  border-right: 16px solid rgb(142, 231, 142);
+  border-bottom: 16px solid rgb(241, 117, 117);
+  border-left: 16px solid rgb(236, 235, 154);
+  width: 400px;
+  height: 400px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+        
+    </style>
+
+    <body>
+        <div class="name">
+            <h1>Hi, Im Hazeem Afiq.</h1>
+            <h1>A Student.</h1>
+            
+        </div>
+
+        <div class="describe">
+            <p>Welcome to my website.I hope you enjoy it.
+        </p></div>
+
+        <div class="loader"></div>
+
+        <div class="button">
+            <button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/index.html#My%20Profile">About Me</a></button>
+            <button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/Gallery.html">My Gallery</a></button>
+            <button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/about_us.html#">Academic Page</a></button>
+        </div>
+        
+
+    </body>    
+
+</html>
