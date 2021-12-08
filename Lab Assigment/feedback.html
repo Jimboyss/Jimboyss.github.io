@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            padding-left: 550px;
+            font-size: 60px;
+            font-family: "Times New Roman", Times, serifrial;
+            background:linear-gradient(to right,#bac93b,#ff669e,#8566ff,#ccffff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .form{
+            color: white;
+            padding-left: 620px;
+            font-size:20px;
+        }
+
+
+    </style>
+    <header>
+        <title>Feedback Form</title>
+    </header>
+
+    <body>
+
+        <h1>Feedback Page</h1>
+        <div class="form">
+            <form  method="post" action="">
+                Name:
+                <input name="name" type = "text" required>
+                <br>
+                <br>
+                Gender:
+                Female
+                <input type="radio" name="gender" value="female" required>   
+                Male
+                <input type="radio" name="gender" value="male" required>
+                <br>
+                <br>
+                Your Feedback:
+                <br>
+                <textarea name="feedback"  cols="30" rows="10" required></textarea> 
+                <br>
+                <br>
+                Date:
+                <input type="date" name="date" value="date" required>
+                <br>
+                <br>
+                <input type="submit" name="Submit" onclick="show_alert()" value="Submit">
+                <input type="reset" name="Reset" value="Reset">
+                <button class="glow-on-hover" type="button"><a href="file:///C:/laragon/www/Lab%20Assigment/Homepage.html">Homepage</a></button>
+            </form>
+
+            <script>
+                function show_alert() {
+                    alert("Your feedback has been stored");
+                }
+            </script>
+        </div>
+        
+    </body>
+</html>
